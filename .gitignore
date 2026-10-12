@@ -1,0 +1,38 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+appsettings.*.local.json
+
+node_modules/
+.angular/
+dist/
+.vscode/
+*.log
+
+.idea/
+.DS_Store
+Thumbs.db
+
+# Office temporary lock files are not challenge source.
+~$*
+
+# Test and browser outputs
+TestResults/
+coverage/
+test-results/
+playwright-report/
+
+# Local credentials, database files, and temporary files
+.env
+.env.*
+!.env.example
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.tmp
+*.temp
+*.swp
+*.swo

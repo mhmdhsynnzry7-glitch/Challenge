@@ -1,0 +1,79 @@
+:root {
+  font-family: Segoe UI, Tahoma, sans-serif;
+  color: #1b2433;
+  background: #f4f6f9;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 12px 20px;
+  background: #163f73;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  min-height: calc(100vh - 52px);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 10px 0;
+  max-width: 320px;
+}
+
+input, select, button {
+  font: inherit;
+  padding: 6px 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+th, td {
+  border: 1px solid #d5dce6;
+  padding: 8px;
+  text-align: left;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.hint {
+  color: #5a6576;
+}
+
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+[role='alert'] { color: #a12626; }

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>چالش ۳ساعته توسعه‌دهنده ارشد فول‌استک</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" />
+  <style>
+    :root {
+      --text: #1b2433;
+      --muted: #5a6576;
+      --line: #d5dce6;
+      --accent: #163f73;
+      --soft: #eef3f9;
+      --must: #fdeeee;
+      --warn: #fff6ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Vazirmatn, Tahoma, sans-serif;
+      color: var(--text);
+      background: #f4f6f9;
+      line-height: 1.85;
+      font-size: 15.5px;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 16px 72px; }
+    .paper {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 36px 40px;
+    }
+    .kicker { color: var(--accent); font-weight: 700; font-size: 13px; margin: 0 0 8px; }
+    h1 { font-size: 26px; line-height: 1.4; margin: 0 0 8px; }
+    .lead { color: var(--muted); margin: 0 0 20px; }
+    .meta { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 22px; }
+    .meta div { background: var(--soft); border-radius: 8px; padding: 10px 12px; }
+    .meta span { display: block; font-size: 12px; color: var(--muted); }
+    h2 {
+      color: var(--accent);
+      font-size: 19px;
+      margin: 32px 0 10px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    h3 { font-size: 16px; margin: 18px 0 8px; }
+    p { margin: 8px 0 12px; }
+    ul, ol { margin: 6px 0 14px; padding-right: 22px; }
+    li { margin: 4px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 10px 0 16px; }
+    th, td { border: 1px solid var(--line); padding: 7px 9px; text-align: right; vertical-align: top; }
+    th { background: var(--soft); }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 13px;
+      direction: ltr;
+      unicode-bidi: isolate;
+      background: #eef2f6;
+      padding: 0 5px;
+      border-radius: 4px;
+    }
+    pre {
+      direction: ltr;
+      text-align: left;
+      background: #15202e;
+      color: #e8eef6;
+      padding: 12px 14px;
+      border-radius: 8px;
+      overflow: auto;
+      font-size: 13px;
+      line-height: 1.5;
+      font-family: Consolas, "Courier New", monospace;
+    }
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 11px 13px;
+      margin: 12px 0 16px;
+    }
+    .must { background: var(--must); border-color: #f1c8c8; }
+    .warn { background: var(--warn); border-color: #efd4b5; }
+    .note { background: var(--soft); }
+    nav { font-size: 13.5px; margin-bottom: 8px; }
+    nav a { color: var(--accent); text-decoration: none; margin-left: 8px; }
+    .foot { margin-top: 28px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+    @media print {
+      body { background: #fff; }
+      .wrap { padding: 0; }
+      .paper { border: 0; padding: 0; }
+      h2 { break-after: avoid; }
+      table, pre, .box { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="paper">
+      <p class="kicker">سند چالش فنی برای کاندید</p>
+      <h1>چالش ۳ساعته توسعه‌دهنده ارشد فول‌استک</h1>
+      <p class="lead">سیستم کوچک فروش و موجودی با ASP.NET Core، Angular و SQL Server. هدف، حجم کد نیست؛ صحت، سازگاری دیتابیس، امنیت و قضاوت مهندسی است.</p>
+      <div class="meta">
+        <div><span>زمان</span><strong>حداکثر ۳ ساعت</strong></div>
+        <div><span>نوع</span><strong>پیاده‌سازی هسته روی استارتر آماده</strong></div>
+        <div><span>خروجی</span><strong>کد قابل اجرا + تصمیم‌های کوتاه مستند</strong></div>
+        <div><span>زبان UI پیشنهادی</span><strong>ساده و کاربردی</strong></div>
+      </div>
+      <nav>
+        <a href="#goal">هدف</a>
+        <a href="#stack">فناوری</a>
+        <a href="#starter">استارتر</a>
+        <a href="#setup">راه‌اندازی</a>
+        <a href="#flow">سناریو</a>
+        <a href="#api">API</a>
+        <a href="#ui">Angular</a>
+        <a href="#rules">قوانین</a>
+        <a href="#scope">محدوده</a>
+      </nav>
+
+      <h2 id="goal">۱. هدف</h2>
+      <p>یک جریان فروش و موجودی را کامل کنید: ورود، مشاهده محصول، ایجاد سفارش، لیست و جزئیات سفارش، و گزارش پرفروش‌ها.</p>
+      <p>ارزیابی روی این محورهاست: مهندسی بک‌اند، طراحی دیتابیس، EF Core / SQL، طراحی API، منطق کسب‌وکار، تراکنش، همزمانی، امنیت، مبانی Angular، تست، تصمیم فنی، و مدیریت محدوده.</p>
+      <div class="box note">شما قرار نیست هر قابلیت ممکن را بسازید. اولویت با صحت، امنیت، منطق کسب‌وکار، همزمانی، سازگاری دیتابیس و کیفیت کد است.</div>
+
+      <h2 id="stack">۲. پشته فناوری — الزامی</h2>
+      <ul>
+        <li>ASP.NET Core Web API</li>
+        <li>Entity Framework Core</li>
+        <li>SQL Server</li>
+        <li>Angular</li>
+        <li>TypeScript</li>
+        <li>JWT Authentication</li>
+      </ul>
+
+      <h2 id="starter">۳. استارتر چه دارد و چه چیزی با شماست</h2>
+      <h3>معمولاً در استارتر آماده است</h3>
+      <ul>
+        <li>پروژه API قابل build و <code>GET /api/health</code></li>
+        <li>Swagger در محیط Development</li>
+        <li>مدل‌های دامنه: User، Product، Customer، Order، OrderItem</li>
+        <li>Migration اولیه و Seed (کاربران، حدود ۱۰ محصول، حدود ۵ مشتری)</li>
+        <li>زیرساخت JWT (پیکربندی اعتبارسنجی توکن) — صدور توکن با شماست</li>
+        <li>زیرساخت خطای متمرکز، بدون تعریف همه کدهای خطای کسب‌وکار</li>
+        <li>اپ Angular با روت‌های پایه و اسکلت صفحات</li>
+        <li>پروژه تست آماده، بدون تست‌های کامل شما</li>
+        <li>Docker Compose فقط برای SQL Server</li>
+      </ul>
+      <h3>شما باید پیاده کنید</h3>
+      <ul>
+        <li>ورود کامل و صدور JWT</li>
+        <li>API محصول، سفارش و گزارش طبق بخش API</li>
+        <li>DTOها، اعتبارسنجی بک‌اند، و رفتار خطا</li>
+        <li>ایجاد سفارش به‌همراه به‌روزرسانی موجودی، به‌صورت سازگار</li>
+        <li>رفتار صحیح وقتی دو سفارش تقریباً همزمان به یک موجودی محدود می‌رسند</li>
+        <li>اتصال Angular به API، توکن، محافظت روت، و صفحات کاربردی</li>
+        <li>تست‌های معنادار روی منطق حیاتی</li>
+        <li>یادداشت کوتاه تصمیم‌های فنی (مثلاً <code>NOTES.md</code>)</li>
+      </ul>
+      <div class="box must">استارتر راه‌حل سفارش، تراکنش، همزمانی و اعتبارسنجی کسب‌وکار را به شما نمی‌دهد. آن تصمیم‌ها بخش اصلی ارزیابی است.</div>
+
+      <h2 id="setup">۴. راه‌اندازی</h2>
+      <ol>
+        <li>SQL Server را با Docker بالا بیاورید: <code>docker compose up -d</code></li>
+        <li>مایگریشن را اعمال کنید (یا طبق README استارتر؛ API ممکن است هنگام استارت مایگریشن را اعمال کند):
+          <pre>dotnet ef database update --project backend/src/Challenge.Api --startup-project backend/src/Challenge.Api</pre>
+        </li>
+        <li>بک‌اند: <code>dotnet run --project backend/src/Challenge.Api</code></li>
+        <li>فرانت‌اند: <code>cd frontend/challenge-app && npm start</code></li>
+      </ol>
+      <p>آدرس‌های معمول توسعه: API روی پورت اعلام‌شده در README استارتر (نمونه: <code>http://localhost:5089</code>)، Swagger در <code>/swagger</code>، Angular روی <code>http://localhost:4200</code>.</p>
+      <p>اگر Docker برای SQL در محیط شما مشکل ساخت، روش جایگزین را از README استارتر دنبال کنید. Docker کردن کل API و Angular الزامی نیست و نباید وقت ۳ ساعته را بگیرد.</p>
+
+      <h3>کاربران Seed</h3>
+      <table>
+        <thead><tr><th>نام کاربری</th><th>رمز نمونه</th><th>نقش</th></tr></thead>
+        <tbody>
+          <tr><td><code>admin</code></td><td>طبق README استارتر (نمونه <code>Admin123!</code>)</td><td>Admin</td></tr>
+          <tr><td><code>sales</code></td><td>طبق README استارتر (نمونه <code>Sales123!</code>)</td><td>Sales</td></tr>
+        </tbody>
+      </table>
+      <p>رمزها باید هش‌شده ذخیره شده باشند. این اعتبارها فقط برای ارزیابی محلی است.</p>
+
+      <h2>۵. مدل داده (حداقل)</h2>
+      <h3>User</h3>
+      <p>Id، Username، PasswordHash، Role (<code>Admin</code> / <code>Sales</code>)، IsActive، CreatedAt</p>
+      <h3>Product</h3>
+      <p>Id، Code (یکتا)، Name، Price (نامنفی)، StockQuantity (نامنفی)، IsActive، CreatedAt، UpdatedAt</p>
+      <h3>Customer</h3>
+      <p>Id، Code (یکتا)، Name، PhoneNumber، IsActive، CreatedAt، UpdatedAt</p>
+      <h3>Order</h3>
+      <p>Id، OrderNumber (یکتا)، CustomerId، OrderDate، Status (<code>Confirmed</code> / <code>Cancelled</code>)، TotalAmount، CreatedBy، CreatedAt، UpdatedAt</p>
+      <h3>OrderItem</h3>
+      <p>Id، OrderId، ProductId، Quantity، UnitPrice، TotalPrice</p>
+      <p><code>UnitPrice</code> باید قیمت لحظه ایجاد سفارش باشد، نه قیمت جاری محصول در آینده.</p>
+
+      <h2 id="flow">۶. سناریوی اصلی کسب‌وکار</h2>
+      <pre>ورود کاربر
+     ↓
+مشاهده محصولات
+     ↓
+ایجاد سفارش
+     ↓
+اعتبارسنجی مشتری
+     ↓
+اعتبارسنجی محصولات
+     ↓
+اعتبارسنجی تعداد
+     ↓
+بررسی موجودی
+     ↓
+ایجاد Order
+     ↓
+ایجاد OrderItems
+     ↓
+به‌روزرسانی موجودی</pre>
+      <p>شما باید تصمیم بگیرید این مراحل چگونه به‌صورت امن و سازگار پیاده شوند.</p>
+
+      <h2 id="api">۷. API مورد انتظار</h2>
+      <p>مسیر دقیق را می‌توانید کمی تنظیم کنید، اما قابلیت معادل الزامی است. شکل DTO درخواست/پاسخ با شماست؛ پیاده‌سازی نهایی DTO در استارتر داده نمی‌شود.</p>
+      <table>
+        <thead><tr><th>متد</th><th>مسیر نمونه</th><th>شرح</th></tr></thead>
+        <tbody>
+          <tr><td>POST</td><td><code>/api/auth/login</code></td><td>ورود با نام کاربری و رمز. claims، انقضا، شکل پاسخ، بررسی رمز و خطا با شما</td></tr>
+          <tr><td>GET</td><td><code>/api/products</code></td><td>جستجو، محصولات فعال، صفحه‌بندی. CRUD محصول لازم نیست</td></tr>
+          <tr><td>GET</td><td><code>/api/customers</code></td><td>در صورت نیاز صفحه ایجاد سفارش (حداقل لیست قابل انتخاب)</td></tr>
+          <tr><td>POST</td><td><code>/api/orders</code></td><td>ایجاد سفارش و کاهش موجودی</td></tr>
+          <tr><td>GET</td><td><code>/api/orders</code></td><td>جستجوی شماره سفارش، فیلتر مشتری/وضعیت/تاریخ، مرتب‌سازی و صفحه‌بندی در دیتابیس</td></tr>
+          <tr><td>GET</td><td><code>/api/orders/{id}</code></td><td>جزئیات با قیمت تاریخی آیتم‌ها</td></tr>
+          <tr><td>GET</td><td><code>/api/reports/top-products</code></td><td>پرفروش‌ها با <code>fromDate</code> و <code>toDate</code>؛ تجمیع در SQL نه در حافظه اپ</td></tr>
+        </tbody>
+      </table>
+      <p>نمونه خروجی گزارش:</p>
+      <pre>[
+  {
+    "productCode": "LAPTOP-001",
+    "productName": "Laptop",
+    "quantitySold": 125,
+    "totalSales": 6250000000
+  }
+]</pre>
+      <p>لیست سفارش و محصول را کامل در حافظه برنامه بار نکنید. فیلتر و صفحه‌بندی باید در سطح دیتابیس باشد.</p>
+
+      <h2 id="ui">۸. صفحات Angular</h2>
+      <table>
+        <thead><tr><th>مسیر</th><th>حداقل محتوا</th></tr></thead>
+        <tbody>
+          <tr><td><code>/login</code></td><td>نام کاربری، رمز، دکمه ورود</td></tr>
+          <tr><td><code>/products</code></td><td>کد، نام، قیمت، موجودی؛ جستجو و صفحه‌بندی</td></tr>
+          <tr><td><code>/orders/create</code></td><td>انتخاب مشتری، افزودن محصول، تعداد، قیمت واحد، جمع ردیف، جمع کل، ثبت</td></tr>
+          <tr><td><code>/orders</code></td><td>شماره، مشتری، تاریخ، مبلغ، وضعیت؛ جستجو، فیلتر، صفحه‌بندی، جزئیات</td></tr>
+          <tr><td><code>/orders/:id</code></td><td>اطلاعات سفارش، آیتم‌ها، تعداد، قیمت واحد، جمع ردیف و جمع کل</td></tr>
+        </tbody>
+      </table>
+      <p>شما باید درخواست ورود، نگهداری وضعیت احراز هویت، ارسال توکن، محافظت روت، و نمایش خطای API را تمام کنید. استارتر راه‌حل نهایی لاگین را نمی‌دهد. UI را ساده نگه دارید.</p>
+
+      <h2 id="rules">۹. اعتبارسنجی کسب‌وکار — بک‌اند</h2>
+      <ul>
+        <li>مشتری وجود داشته باشد و فعال باشد</li>
+        <li>محصول وجود داشته باشد و فعال باشد</li>
+        <li>تعداد بزرگ‌تر از صفر باشد</li>
+        <li>سفارش حداقل یک آیتم داشته باشد</li>
+        <li>موجودی کافی باشد</li>
+        <li>کاربر احراز هویت شده باشد و مجوز داشته باشد</li>
+      </ul>
+      <div class="box must">فقط اعتبارسنجی فرانت‌اند قابل قبول نیست.</div>
+
+      <h2>۱۰. قیمت تاریخی</h2>
+      <p>هنگام ایجاد سفارش، قیمت محصول باید روی <code>OrderItem.UnitPrice</code> ذخیره شود. اگر بعداً <code>Product.Price</code> عوض شود، سفارش‌های قبلی نباید تغییر کنند. محل این منطق با شماست.</p>
+
+      <h2>۱۱. تراکنش</h2>
+      <p>ایجاد سفارش چند عملیات است: ایجاد Order، ایجاد آیتم‌ها، به‌روزرسانی موجودی. اگر یکی شکست بخورد، دیتابیس نباید سفارش ناقص داشته باشد.</p>
+      <p>مرز تراکنش، رفتار شکست، و برگشت تغییرات را خودتان تعیین کنید. راه‌حل از پیش در سند یا استارتر نیست.</p>
+
+      <h2>۱۲. همزمانی — مهم‌ترین بخش</h2>
+      <p>در Seed حداقل این محصول وجود دارد:</p>
+      <pre>Product Code = LAPTOP-001
+StockQuantity = 5</pre>
+      <p>دو درخواست تقریباً همزمان:</p>
+      <pre>درخواست A: تعداد 4
+درخواست B: تعداد 3</pre>
+      <p>سیستم باید تضمین کند:</p>
+      <ul>
+        <li>هر دو سفارش نمی‌توانند موفق شوند</li>
+        <li>موجودی هرگز منفی نشود</li>
+        <li>وضعیت دیتابیس سازگار بماند</li>
+        <li>سفارش ناموفق پاسخ HTTP مناسب بدهد</li>
+        <li>سفارش موفق موجودی را درست کم کند</li>
+      </ul>
+      <div class="box warn">
+        استراتژی را خودتان انتخاب و در NOTES توضیح دهید. این سند عمداً روش پیاده‌سازی را دیکته نمی‌کند.
+        ارزیاب بعداً از شما می‌پرسد اگر دو درخواست دقیقاً هم‌زمان برسند چه می‌شود.
+      </div>
+
+      <h2>۱۳. خطا</h2>
+      <p>زیرساخت خطای متمرکز در استارتر هست. کدهای خطای کسب‌وکار را خودتان طراحی کنید. موقعیت‌هایی که باید پوشش دهید:</p>
+      <ul>
+        <li>اعتبار ورود نامعتبر</li>
+        <li>عدم احراز هویت / عدم مجوز</li>
+        <li>محصول یا مشتری پیدا نشد</li>
+        <li>موجودی ناکافی</li>
+        <li>تعارض در به‌روزرسانی همزمان</li>
+        <li>سفارش نامعتبر</li>
+      </ul>
+      <p>Exception خام و stack trace را به کلاینت ندهید. Angular باید پیام مفید نشان دهد.</p>
+
+      <h2>۱۴. امنیت</h2>
+      <ul>
+        <li>هش رمز عبور</li>
+        <li>اعتبارسنجی JWT</li>
+        <li>مجوزدهی سمت سرور (نه فقط در Angular)</li>
+        <li>اعتبارسنجی ورودی</li>
+        <li>عدم افشای اطلاعات حساس</li>
+        <li>جلوگیری از SQL Injection و overposting</li>
+        <li>status code مناسب</li>
+      </ul>
+      <p>راز واقعی production را hard-code نکنید. از تنظیمات توسعه / متغیر محیطی استفاده کنید.</p>
+
+      <h2>۱۵. تست</h2>
+      <p>پروژه تست آماده است. تست‌های معنادار برای منطق حیاتی بنویسید. حداقل این سناریوها را در نظر بگیرید:</p>
+      <ul>
+        <li>سفارش معتبر</li>
+        <li>تعداد نامعتبر</li>
+        <li>موجودی ناکافی</li>
+        <li>محصول غیرفعال</li>
+        <li>مشتری نامعتبر</li>
+        <li>سفارش همزمان روی موجودی محدود</li>
+        <li>مجوزدهی</li>
+      </ul>
+      <p>درصد پوشش دلخواه ملاک نیست.</p>
+
+      <h2>۱۶. Docker</h2>
+      <p>هدف استارتر این است که SQL Server سریع بالا بیاید. کل اپ را Docker کردن اختیاری است و جزء امتیاز اصلی نیست. سقف ۳ ساعت مهم‌تر از کامل بودن Docker است.</p>
+
+      <h2 id="scope">۱۷. محدودیت‌ها و مدیریت محدوده</h2>
+      <ul>
+        <li>CRUD کامل محصول لازم نیست</li>
+        <li>زمان را صرف طراحی بصری پیشرفته نکنید</li>
+        <li>معماری پیچیده (میکروسرویس، پیام‌رسان، چند دیتابیس و مشابه) بدون دلیل قوی اضافه نکنید</li>
+        <li>اگر وقت کم شد، ظاهر و قابلیت فرعی را کم کنید؛ هسته سفارش و موجودی را قربانی نکنید</li>
+      </ul>
+      <p>تصمیم‌های مهم فنی را کوتاه مستند کنید.</p>
+
+      <h2>۱۸. چک‌لیست قبل از تحویل</h2>
+      <ol>
+        <li>ورود کار می‌کند</li>
+        <li>محصولات با جستجو/صفحه‌بندی از API می‌آیند</li>
+        <li>ایجاد سفارش موجودی را کم می‌کند</li>
+        <li>موجودی ناکافی رد می‌شود</li>
+        <li>دو سفارش همزمان روی LAPTOP-001 بیش از موجودی مصرف نمی‌کنند</li>
+        <li>لیست سفارش در دیتابیس فیلتر/صفحه‌بندی می‌شود</li>
+        <li>گزارش تجمیع SQL دارد</li>
+        <li>قیمت تاریخی حفظ می‌شود</li>
+        <li>تست حیاتی نوشته شده</li>
+        <li>NOTES کوتاه است</li>
+      </ol>
+
+      <div class="foot">
+        سند کاندید — چالش ۳ساعته ارشد فول‌استک. این فایل راهنمای ارزیاب یا پاسخ مورد انتظار نیست.
+      </div>
+    </article>
+  </div>
+</body>
+</html>
